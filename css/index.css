@@ -72,6 +72,7 @@ body{
 	-o-transition:2s transform linear;
 	-ms-transition:2s transform linear;
 }
+
 #down{
 	position:absolute;
 	left:0%;
@@ -90,13 +91,15 @@ body{
 	color:#ADADB8;
 	text-decoration:none;
 	font-family:Impact; 
-	font-size:40px; 
+	font-size:40px;
+
 
 
 }
 #down a:hover{
 	color:white;
-	font-size:44px;   
+	font-size:44px;
+	border-bottom: 1px solid white;   
 }
 
 #middle{
