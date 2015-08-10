@@ -371,6 +371,7 @@ body{
 	width:50%;
 	float:left;
 }
+
 #events{
 	width:100%;
 	height:60%;
@@ -378,9 +379,20 @@ body{
 	overflow:hidden;
 	background-color:#222;
     padding-top:5%;
-
-    
+    color:white;
+    z-index:-10;  
 }
+/*#glass{
+	width:98%;
+	height:95%;
+	position:relative;
+	overflow:hidden;
+	background-color:white;
+	opacity:0.3;
+	z-index:1;
+	color:white;
+
+}*/
 .title{
 	//position:absolute;
 	float:left;
@@ -392,17 +404,24 @@ body{
 	//margin-top:2%;
 	//padding-left:2%;
 	border-right:5px solid silver;
+	color:white; 
 }
 .title li{
 	//font-weight:600;
 	//opacity:0.7;
 	text-decoration:none;
 	font-size:20px; 
-	color:white; 
+	color:lightgrey; 
 }
 .title li:hover{
 	//opacity:1;
-	text-decoration:underline;
+	//text-decoration:underline;
+	font-size:25px;
+	color:black;
+	background-color:lightgrey;   
+}
+.title li:active{
+	color:white; 
 }
 .description{
 	//position:absolute;
@@ -413,7 +432,8 @@ body{
 	//background-color: #87CEEB;
 	//margin-top:2%;
 	color:white;
-	font-size:25px  
+	font-size:25px;
+
 }
 .description{
 	text-align:center;
@@ -422,8 +442,13 @@ body{
 	position:relative;
 	width:100%;
 }
+#sponsors_images{
+	background-color:lightgrey;
+	height:60%;  
+}
 #sponsors_images img{
 	width:24.5%;
+
 }
 #contact_us{
 	width:100%;
@@ -435,7 +460,13 @@ body{
 	padding-top:5%;
 	padding-bottom:5%;
 	//background-color:#77C043;
-	background-color:#ccc;
+	background-color:lightgrey;
+
+}
+#contact_us h2{
+	font-size:35px;
+	color:black;
+	font-family:Verdana;
 
 }
 .profile{
@@ -447,26 +478,32 @@ body{
 	margin-left:1%;
 	float:left;
 	//background:green;
-	//background:#333;
+	background:#222;
 	height:80%;
-	//box-shadow: 10px 10px 30px black;
+	box-shadow: 10px 10px 30px black;
 }
 .head_image{
 	position:absolute;
 	top:0;
 	background:purple;
 	left:20%;
+	margin-top:25px; 
 	//width:60%;
 	//height:32%;
-	width:100px;
-	height:100px;
+	width:150px;
+	height:150px;
 	border-radius:50%;
 
 	overflow:hidden;
 }
 .head_image:hover{
-	box-shadow: 5px 5px 10px black;
+	box-shadow: 5px 5px 10px lightgrey;
+
 }
+/*.head_image img:hover{
+	width:200px;
+	height:200px;  
+}*/
 .image_holder img{
 	width:100%;
 }
@@ -479,12 +516,11 @@ body{
 .description_holder{
 	position:absolute;
 	left:0;
-	//background:#333;
 	width:100%;
 	height:53%;
 	top:46%;
-	//color:white;
-	color:#333;
+	color:white;
+	//color:#333;
 }
 
 #footer{

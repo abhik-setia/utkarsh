@@ -8,10 +8,10 @@ $(document).ready(function(){
                 }
             }); */
 
-    
 
-    
-     
+
+
+
 
 /*
     // Select the previously blasted text
@@ -54,7 +54,7 @@ $("div .blast").velocity(
 	$('#open_close_bt').click(function(){
 
 		if(!open){
-			
+
 			$('.book_front').addClass('open');
 			$('.book_front').css('z-index',-1);
 			open=true;
@@ -63,7 +63,7 @@ $("div .blast").velocity(
 		else{
 			var x=10;
 			for(var i=1;i<=page_no;i++){
-				
+
 				console.log(x-i);
 				$('.page'+i).removeClass('open');
 				$('.page'+i).css('z-index',x-i);
@@ -132,7 +132,7 @@ $("div .blast").velocity(
 
 
     $('#back_bt').click(function(){
-    	
+
     	switch(page_no){
     		case 1:
     		    $('.page1').removeClass('open');
@@ -174,21 +174,21 @@ $("div .blast").velocity(
     	var element_id=$(this).attr('id');
         console.log($('.left').css('z-index'));
     	console.log(element_id);
-    	
+
     	p=setInterval(function(){
     		//change_image(element_id);
-    		
+
     	},100);
     },function(){
     	clearInterval(p);
     });
 
     function change_image(){
-    	
+
     	var element_id=arguments[0];
     	$('#'+element_id+' .head_image').css('z-index',1);
     	var element;
-    	
+
     	switch(frame_no){
     		case 0:
     		  element='#'+element_id+' .front';
@@ -232,7 +232,7 @@ $("div .blast").velocity(
     for(var i=2;i<=total;i++){
         $('#d'+i).css('display','none');
     }
-    $('.title li:nth-child(1)').css('color','purple');
+    $('.title li:nth-child(1)').css('color','black');
     $('.title li').click(function(){
         console.log($(this).attr('id'));
         var a=$(this).attr('id');
@@ -245,11 +245,11 @@ $("div .blast").velocity(
                    .css("display", 'none')
                    .velocity("transition.fadeIn", { stagger: 50 });
                 */
-                $('.title li:nth-child('+i+')').css('color','black');
+                $('.title li:nth-child('+i+')').css('color','white');
             }
         }
         $('#d'+a).css('display','block');
-        $('.title li:nth-child('+a+')').css('color','purple');
+        $('.title li:nth-child('+a+')').css('color','black');
     });
 
 
