@@ -555,12 +555,20 @@ body{
 	font-size:23px;  
 	//background-color:lightgrey;
 	color:white;     
+	.navigation{
+		font-size: .4em;
+	9
+	
 }
 @media only screen and (max-width: 800px){
 	body{
 		font-size: .9em;
 		
 	}
+	#navigation span{
+		font-size: .9em;
+	}
+	
 	#gallery{
 		height:85%;
 	}
@@ -582,9 +590,14 @@ body{
 		font-size: .8em;
 		
 	}
+	#navigation{
+		font-size: .8em;
+	}
+	
 	#gallery{
 		height:85%;
 	}
+
 	.container{
 		left:10%;
 		width:85%;
@@ -607,6 +620,10 @@ body{
 		font-size: .7em;
 		
 	}
+	#navigation{
+		font-size: .7em;
+	}
+	
 	#gallery{
 		height:80%;
 	}
@@ -633,6 +650,10 @@ body{
 		font-size: .5em;
 		
 	}
+	#navigation{
+		font-size: .5em;
+	}
+	
 	#gallery{
 		height:75%;
 	}
@@ -658,6 +679,9 @@ body{
 	body{
 		font-size: .4em;
 		
+	}
+	#navigation{
+		font-size: .4em;
 	}
 	#gallery{
 		height:65%;
@@ -688,7 +712,11 @@ body{
 	#gallery{
 		height:60%;
 	}
-	.container{
+	#navigation{
+		font-size: .3em;
+	}
+	
+	#container{
 		left:5%;
 		width:90%;
 	}
